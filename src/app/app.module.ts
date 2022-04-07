@@ -7,12 +7,20 @@ import { FormsModule } from '@angular/forms';
 import { TopNavbarComponent } from './top-navbar/top-navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomepageComponent } from './homepage/homepage.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { BlogComponent } from './blog/blog.component';
+import { AboutComponent } from './about/about.component';
+import { ProblemsComponent } from './problems/problems.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopNavbarComponent,
-    HomepageComponent
+    HomepageComponent,
+    ProjectsComponent,
+    BlogComponent,
+    AboutComponent,
+    ProblemsComponent
   ],
   imports: [
     BrowserModule,
