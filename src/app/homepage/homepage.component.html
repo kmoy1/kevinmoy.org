@@ -1,0 +1,30 @@
+<header class="py-5 bg-light border-bottom mb-4">
+    <div class="container">
+        <div class="text-center">
+            <h1 class="fw-bolder">Kevin Moy</h1>
+            <p class="lead mb-0">Hello! I'm a UC Berkeley computer science and data science grad. I work as a software engineer at Amazon.</p>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div *ngFor="let card of cards; let i = index;">
+        <div *ngIf="i % 2 === 0" class="row">
+            <div class="col-sm-6 col-sm-6">
+                <div class="card shadow mb-4 text-center">
+                    <div class="card-body">
+                            <h1><a href='{{cards[i].path}}'>{{cards[i].cardTitle}}</a></h1>
+                            <p>{{cards[i].cardDescription}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-sm-6">
+                <div class="card shadow mb-4 text-center">
+                    <div class="card-body">
+                            <h1><a href='{{cards[i+1].path}}'>{{cards[i+1].cardTitle}}</a></h1>
+                            <p>{{cards[i+1].cardDescription}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
