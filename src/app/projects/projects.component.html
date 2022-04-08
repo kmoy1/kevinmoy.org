@@ -1,1 +1,24 @@
-<p>projects works!</p>
+<header class="py-5 bg-light border-bottom mb-4">
+    <div class="container">
+        <div class="text-center">
+            <h1 class="fw-bolder">Projects</h1>
+            <p class="lead mb-0">Some of my projects, which can be found on Github.</p>
+        </div>
+    </div>
+</header>
+<div class="container">
+    
+    <div *ngFor="let project of projects; let first=first" class="row">
+        <div *ngIf="!first">
+            <hr>
+        </div>
+        <div class="col-md-3">
+            <div class="text-center">
+                <h4><a href="{{project.projectLink}}">{{project.projectName}}</a></h4>  
+            </div>
+        </div>
+        <div class="col-md-9">
+            <p>{{project.projectDesc}}</p>
+        </div>  
+    </div>
+</div>

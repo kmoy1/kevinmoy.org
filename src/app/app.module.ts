@@ -11,6 +11,10 @@ import { ProjectsComponent } from './projects/projects.component';
 import { BlogComponent } from './blog/blog.component';
 import { AboutComponent } from './about/about.component';
 import { ProblemsComponent } from './problems/problems.component';
+import { MarkdownModule } from 'ngx-markdown';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
+
 
 @NgModule({
   declarations: [
@@ -20,13 +24,17 @@ import { ProblemsComponent } from './problems/problems.component';
     ProjectsComponent,
     BlogComponent,
     AboutComponent,
-    ProblemsComponent
+    ProblemsComponent,
   ],
   imports: [
     BrowserModule,
     NgbModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    MarkdownModule.forRoot({
+      loader: HttpClient
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
