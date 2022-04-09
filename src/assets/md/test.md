@@ -6,3 +6,4 @@ I also teach and play chess quite a bit- I'm a Candidate Master with a USCF rati
 
 My projects are all detailed on my [Github](https://github.com/kmoy1).
 
+If you want to get in touch with me, feel free to shoot me an email any time at [kevinmoy@berkeley.edu](mailto:kevinmoy@berkeley.edu ).
