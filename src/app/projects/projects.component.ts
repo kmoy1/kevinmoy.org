@@ -20,6 +20,11 @@ const PROJECT_LIST: Project[] = [
     projectLink: "https://github.com/kmoy1/CheapestNetwork", 
     projectDesc: `An algorithm I implemented in Python to find the Dominating Set that minimizes average pairwise distance in a given graph.`
   },
+  {
+    projectName: "kevinmoy.org", 
+    projectLink: "https://github.com/kmoy1/kevinmoy.org", 
+    projectDesc: `This website, written in Angular and Bootstrap.`
+  },
 ]
 
 @Component({

@@ -8,23 +8,38 @@
 </header>
 <div class="container">
     <div *ngFor="let card of cards; let i = index;">
-        <div *ngIf="i % 2 === 0" class="row">
-            <div class="col-sm-6 col-sm-6">
-                <div class="card shadow mb-4 text-center">
-                    <div class="card-body">
-                            <h1><a href='{{cards[i].path}}'>{{cards[i].cardTitle}}</a></h1>
-                            <p>{{cards[i].cardDescription}}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-sm-6">
-                <div class="card shadow mb-4 text-center">
-                    <div class="card-body">
-                            <h1><a href='{{cards[i+1].path}}'>{{cards[i+1].cardTitle}}</a></h1>
-                            <p>{{cards[i+1].cardDescription}}</p>
+        <div *ngIf="i === cards.length - 1 && i % 2 === 0; else twoCardRow">
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-sm-6">
+                    <div class="card shadow mb-4 text-center">
+                        <div class="card-body">
+                                <h1><a href='{{card.path}}'>{{card.cardTitle}}</a></h1>
+                                <p>{{card.cardDescription}}</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <ng-template #twoCardRow>
+        <div *ngIf="i % 2 === 0" class="row">
+                <div class="col-sm-6 col-sm-6">
+                    <div class="card shadow mb-4 text-center">
+                        <div class="card-body">
+                                <h1><a href='{{cards[i].path}}'>{{cards[i].cardTitle}}</a></h1>
+                                <p>{{cards[i].cardDescription}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-sm-6">
+                    <div class="card shadow mb-4 text-center">
+                        <div class="card-body">
+                                <h1><a href='{{cards[i+1].path}}'>{{cards[i+1].cardTitle}}</a></h1>
+                                <p>{{cards[i+1].cardDescription}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+        <!-- </div> -->
     </div>
 </div>

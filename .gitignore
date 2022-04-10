@@ -1,5 +1,14 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+#Amplify
+.github/*
+
+# Firebase
+.firebase
+.firebaserc
+firebase.json
+database.rules.json
+
 # Compiled output
 /dist
 /tmp

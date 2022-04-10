@@ -20,6 +20,11 @@
     font-size: 1.5rem;
 }
 
+.container .resume {
+    float:right;
+    font-size: 1.5rem;
+}
+
 .container * a {
     color: inherit;
 }
