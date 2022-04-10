@@ -9,3 +9,11 @@ markdown h1 {
     text-align: center;
     margin-top: 20px;
 }
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin-bottom: 60px; /* Margin bottom by footer height */
+}
