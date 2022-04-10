@@ -12,9 +12,8 @@ import { AboutComponent } from './about/about.component';
 import { ProblemsComponent } from './problems/problems.component';
 import { MarkdownModule } from 'ngx-markdown';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { MdDisplayComponent } from './md-display/md-display.component';
-import { ProblemMdDisplayComponent } from './problem-md-display/problem-md-display.component';
-  
+import { MdDisplayComponent } from './md-display/md-display.component';  
+import { ProblemMdDisplayComponent } from './problem-md-display/problem-md-display.component';  
 
 
 @NgModule({
