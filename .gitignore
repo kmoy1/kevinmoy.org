@@ -8,6 +8,7 @@
 .firebaserc
 firebase.json
 database.rules.json
+public/*
 
 # Compiled output
 /dist

@@ -7,8 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.css'],
 })
 export class AboutComponent implements OnInit {
-  ngxMarkdownVersion = '12.0.1';
-
+  path = "assets/md/test.md"
   constructor() { }
 
   ngOnInit(): void {

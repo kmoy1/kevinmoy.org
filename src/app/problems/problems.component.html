@@ -6,6 +6,12 @@
         </div>
     </div>
 </header>
-<div class="container">
-    There will be content here soon, trust me.
+<div class="container" style="max-width: 50%;">
+    <div *ngIf="problems">
+        <div class="list-group">
+            <div *ngFor="let problem of problems">
+                <a routerLink="/problems/{{problem.id}}" class="list-group-item list-group-item-action">{{problem.title}}</a>
+            </div>
+        </div>
+    </div>
 </div>
