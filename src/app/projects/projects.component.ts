@@ -23,7 +23,9 @@ const PROJECT_LIST: Project[] = [
   {
     projectName: "Pipelining via PMJ and XJoin", 
     projectLink: "/assets/PipelinedJoins.pdf", 
-    projectDesc: `A paper researching join operations that retain the pipeline property- specifically, Progressive Merge Join and XJoin.`
+    projectDesc: `Usually, join operations are "blocking": future operations must wait for the join to finish until it can work on the joined results. 
+                  This paper researches two join operations overcome this obstacle and allow for pipelined query execution-
+                  specifically, Progressive Merge Join and XJoin.`
   },
   {
     projectName: "kevinmoy.org", 
