@@ -30,6 +30,7 @@ def combine_to_61(lst):
 ```
 
 <details><summary markdown="span">View Solution</summary>
+
 ```python
 def combine_to_61(lst):
     def helper(lst, num_so_far):
@@ -42,6 +43,7 @@ def combine_to_61(lst):
         return with_sum or with_mul
     return helper(lst, 0)
 ```
+
 </details>
 
 <details><summary markdown="span">View Explanation</summary>
@@ -56,7 +58,6 @@ With our base cases done, now comes the fun part of the problem: Implementing th
 We can prune our recursive tree a bit with our contiguousness requirement: if the operation of summing OR multiplying by the first element of `lst` results in a sum-product greater than 61, we know we'll have overshot it and that subset won't work.
 
 </details>
-
 
 ## Challenge: Combine\_To\_61\_Unleashed
 
