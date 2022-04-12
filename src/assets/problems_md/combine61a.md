@@ -47,6 +47,7 @@ def combine_to_61(lst):
 </details>
 
 <details><summary markdown="span">View Explanation</summary>
+
 The first thing we notice from our skeleton code is that we take a helper function that takes an extra parameter `num_so_far`. In general, added parameters such as this are meant as a tracker of progress somehow. This should immediately give us a clue that `num_so_far` will track our total sum-product recursively.
 
 Given that, our first base case becomes easy: If our tracker has a value of 61, we know we've found some product/sum of elements in `lst` that results in value 61. 
