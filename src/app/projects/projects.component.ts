@@ -21,6 +21,11 @@ const PROJECT_LIST: Project[] = [
     projectDesc: `An algorithm I implemented in Python to find the Dominating Set that minimizes average pairwise distance in a given graph.`
   },
   {
+    projectName: "Pipelining via PMJ and XJoin", 
+    projectLink: "/assets/PipelinedJoins.pdf", 
+    projectDesc: `A paper researching join operations that retain the pipeline property- specifically, Progressive Merge Join and XJoin.`
+  },
+  {
     projectName: "kevinmoy.org", 
     projectLink: "https://github.com/kmoy1/kevinmoy.org", 
     projectDesc: `This website, written in Angular and Bootstrap.`

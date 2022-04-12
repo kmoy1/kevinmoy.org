@@ -15,7 +15,6 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { MdDisplayComponent } from './md-display/md-display.component';  
 import { ProblemMdDisplayComponent } from './problem-md-display/problem-md-display.component';  
 
-
 @NgModule({
   declarations: [
     AppComponent,
