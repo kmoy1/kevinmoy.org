@@ -6,8 +6,7 @@
         </div>
     </div>
 </header>
-<div class="container">
-    
+<div *ngIf="projects" class="container">
     <div *ngFor="let project of projects; let first=first" class="row">
         <div *ngIf="!first">
             <hr>
