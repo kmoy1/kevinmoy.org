@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { MdService } from '../../md.service';
+import { MdService } from '../../service/md.service';
 import { Problem } from '../../model/Problem';
 
 
