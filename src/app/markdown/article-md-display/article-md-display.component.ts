@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { MdService } from '../md.service';
-import { Article } from '../model/Article';
+import { MdService } from '../../md.service';
+import { Article } from '../../model/Article';
 
 @Component({
   selector: 'app-article-md-display',
