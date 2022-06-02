@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { Problem } from './model/Problem';
-import { PROBLEMS } from './model/problems';
-import { Project } from './model/Project';
-import { PROJECTS } from './model/projects';
-import { Article } from './model/Article';
-import { ARTICLES } from './model/articles';
+import { Problem } from '../model/Problem';
+import { PROBLEMS } from '../model/problems';
+import { Project } from '../model/Project';
+import { PROJECTS } from '../model/projects';
+import { Article } from '../model/Article';
+import { ARTICLES } from '../model/articles';
 
 @Injectable({
   providedIn: 'root'

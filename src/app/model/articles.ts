@@ -4,7 +4,7 @@ export const ARTICLES: Article[] = [
     {
         id: 1,
         title: "Pipelining via PMJ and XJoin",
-        path: "/assets/PipelinedJoins.pdf",
+        path: "/assets/pdf/PipelinedJoins.pdf",
         desc: `Usually, join operations are "blocking": future operations must wait for the join to finish until it can work on the joined results. 
         This paper researches two join operations overcome this obstacle and allow for pipelined query execution-
         specifically, Progressive Merge Join and XJoin.`
