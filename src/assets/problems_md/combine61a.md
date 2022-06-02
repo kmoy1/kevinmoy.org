@@ -2,7 +2,7 @@
 
 I developed this problem back in Fall 2019 as a part of Berkeley CSM for CS61A, and it's one of my proudest creations. 
 
-Let's take a simplified version of the maximum subset sum problem. 
+Let's take a simplified version of the maximum subset sum problem.
 
 **Implement combine\_to\_61, where we want to return true a contiguous subset of a given list can be combined to 61.** This means that for a given subset, some combination of multiplication and addition operations to those numbers results in 61.
 

@@ -6,6 +6,24 @@
         </div>
     </div>
 </header>
-<div class="container">
-    There will be content here soon, trust me.
+
+<div *ngIf="articles" class="container">
+    <div *ngFor="let article of articles; let first=first" class="row">
+        <div *ngIf="!first">
+            <hr>
+        </div>
+        <div class="col-md-3">
+            <div class="text-center">
+                <div *ngIf="article.path.split('.', 2)[1] === 'md'; else elseBlock">
+                    <h4><a routerLink="/articles/{{article.id}}">{{article.title}}</a></h4>  
+                </div>
+                <ng-template #elseBlock>
+                    <h4><a href="{{article.path}}">{{article.title}}</a></h4>  
+                </ng-template>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <p>{{article.desc}}</p>
+        </div>  
+    </div>
 </div>

@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { SecurityContext } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -13,7 +14,10 @@ import { ProblemsComponent } from './problems/problems.component';
 import { MarkdownModule } from 'ngx-markdown';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { MdDisplayComponent } from './md-display/md-display.component';  
-import { ProblemMdDisplayComponent } from './problem-md-display/problem-md-display.component';  
+import { ProblemMdDisplayComponent } from './problem-md-display/problem-md-display.component';
+import { ArticleMdDisplayComponent } from './article-md-display/article-md-display.component';  
+import { NgxMathMdModule } from 'projects/ngx-math-md/src/public-api';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +30,8 @@ import { ProblemMdDisplayComponent } from './problem-md-display/problem-md-displ
     ProblemsComponent,
     MdDisplayComponent,
     ProblemMdDisplayComponent,
+    ArticleMdDisplayComponent,
+    TestComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,8 +39,10 @@ import { ProblemMdDisplayComponent } from './problem-md-display/problem-md-displ
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
+    NgxMathMdModule,
     MarkdownModule.forRoot({
-      loader: HttpClient
+      loader: HttpClient,
+      sanitize: SecurityContext.NONE
     })
   ],
   providers: [],

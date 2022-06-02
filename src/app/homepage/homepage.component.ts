@@ -9,7 +9,7 @@ export interface Card {
 
 const HOMEPAGE_CARDS: Card[] = [
   {cardTitle: "Projects", cardDescription: "Projects I've created and contributed to over the years.", path:"/projects"},
-  {cardTitle: "Blog", cardDescription: "Computer nerdy stuff I like to write about.", path:"/articles"},
+  {cardTitle: "Articles", cardDescription: "Research + other nerdy stuff I like to write about.", path:"/articles"},
   {cardTitle: "Problems", cardDescription: "Some cool CS problems I thought of in the shower.", path:"/problems"},
   {cardTitle: "About Me", cardDescription: "About Me.", path:"/about"},
 ];

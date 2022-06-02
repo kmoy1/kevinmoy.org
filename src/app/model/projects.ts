@@ -14,13 +14,6 @@ export const PROJECTS: Project[] = [
       projectDesc: `An algorithm I implemented in Python to find the Dominating Set that minimizes average pairwise distance in a given graph.`
     },
     {
-      projectName: "Pipelining via PMJ and XJoin", 
-      projectLink: "/assets/PipelinedJoins.pdf", 
-      projectDesc: `Usually, join operations are "blocking": future operations must wait for the join to finish until it can work on the joined results. 
-                    This paper researches two join operations overcome this obstacle and allow for pipelined query execution-
-                    specifically, Progressive Merge Join and XJoin.`
-    },
-    {
       projectName: "ML Book", 
       projectLink: "https://kmoy1.github.io/ML_Book", 
       projectDesc: `Notes and tutorials on machine learning that I wrote and compiled into a Jupyter book while taking CS189 at Berkeley.`

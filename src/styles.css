@@ -10,6 +10,12 @@ markdown h1 {
     margin-top: 20px;
 }
 
+ngx-math-md h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
 html {
     position: relative;
     min-height: 100%;
