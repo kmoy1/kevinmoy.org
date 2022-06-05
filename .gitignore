@@ -15,6 +15,7 @@ public/*
 /tmp
 /out-tsc
 /bazel-out
+/patches 
 
 # Node
 /node_modules
