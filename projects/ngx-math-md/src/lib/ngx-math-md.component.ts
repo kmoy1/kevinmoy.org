@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ElementRef, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, ElementRef } from '@angular/core';
 import { NgxMathMdService } from './ngx-math-md.service';
 import { KatexOptions } from './katex-options';
 
@@ -14,16 +14,11 @@ export class NgxMathMdComponent implements OnInit {
   @Input() katexOptions: KatexOptions | undefined;
 
   /** Event emitter indicating compiled markdown is finished. */
-  @Output() error = new EventEmitter<string>();
-  @Output() load = new EventEmitter<string>();
-  @Output() ready = new EventEmitter<void>();
-
 
   constructor(public element: ElementRef<HTMLElement>, public mdService: NgxMathMdService) { }
 
   ngOnInit(): void {
     this.katexOptions = new KatexOptions();
-    this.katexOptions['displayMode'] = false;
   }
 
   ngOnChanges(): void {
@@ -40,9 +35,8 @@ export class NgxMathMdComponent implements OnInit {
       .subscribe(
         markdown => {
           this.renderMD(markdown);
-          this.load.emit(markdown);
         },
-        error => this.error.emit(error),
+        error => console.log(error),
       );
   }
   
@@ -50,9 +44,8 @@ export class NgxMathMdComponent implements OnInit {
     */
   renderMD(markdown: string) {
     let mdAsHtml = this.mdService.convert(markdown);
-    console.log("HTML (no latex):", mdAsHtml);
-    let latexRenderedHtml = this.mdService.renderKatex(mdAsHtml, this.katexOptions);
-    console.log("HTML (latex):", latexRenderedHtml);
+    let latexRenderedHtml = this.mdService.renderLatex(mdAsHtml, this.katexOptions);
+    // Set ngx-math-md to rendered html.
     this.element.nativeElement.innerHTML = latexRenderedHtml;
     this.mdService.renderCodeBlocks(this.element.nativeElement);
   }
