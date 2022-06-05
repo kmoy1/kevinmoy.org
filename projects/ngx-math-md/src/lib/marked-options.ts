@@ -1,4 +1,4 @@
-/* eslint-disable */
+/** Options for Marked rendering. */
 import { Renderer as MarkdownRenderer } from 'marked';
 
 export class MarkedOptions {

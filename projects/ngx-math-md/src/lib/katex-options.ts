@@ -1,6 +1,6 @@
-/* eslint-disable */
+/** Options for Katex rendering. Only attribute that really matters here is displayMode. */
 export class KatexOptions {
-    displayMode?: boolean;
+    displayMode?: boolean = false;
     throwOnError?: boolean;
     errorColor?: string;
     macros?: any;

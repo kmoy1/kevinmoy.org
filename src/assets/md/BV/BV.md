@@ -16,9 +16,9 @@ Now that we have our model,  we can say that the bias of $\hat{f}$ is the differ
 
 We say "average prediction" in the context of a single given input $x$, which simplifies our math a lot. Specifically, we want to calculate the below value, for a given input $x$ and *unknown* truth $f(x)$:
 
-\[
+$$
 E[\hat{f}(x)] - f(x)
-\]
+$$
 
 This will give us an indication of how "correct" our model is in matching the true relationship $f(x)$. Happily, there exists a way to estimate this bias.
 
