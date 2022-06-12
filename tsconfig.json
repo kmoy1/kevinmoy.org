@@ -12,6 +12,10 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "paths": {
+      "ngx-ipynb": [
+        "dist/ngx-ipynb/ngx-ipynb",
+        "dist/ngx-ipynb"
+      ],
       "ngx-math-md": [
         "dist/ngx-math-md/ngx-math-md",
         "dist/ngx-math-md"
