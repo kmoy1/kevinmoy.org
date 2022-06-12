@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.css'],
 })
 export class AboutComponent implements OnInit {
-  path = "assets/md/test.md"
+  path = "assets/md/about.md"
   constructor() { }
 
   ngOnInit(): void {

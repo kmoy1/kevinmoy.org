@@ -2,18 +2,17 @@ import { Component, OnInit, Input, ElementRef } from '@angular/core';
 import { NgxMathMdService } from './ngx-math-md.service';
 import { KatexOptions } from './katex-options';
 
+
 @Component({
   selector: 'ngx-math-md',
   templateUrl: './ngx-math-md.component.html',
-  styleUrls: ['./ngx-math-md.component.css']
+  styleUrls: []
 })
 export class NgxMathMdComponent implements OnInit {
-  
+
   /** Path to markdown file. */
   @Input() src: string | undefined;
   @Input() katexOptions: KatexOptions | undefined;
-
-  /** Event emitter indicating compiled markdown is finished. */
 
   constructor(public element: ElementRef<HTMLElement>, public mdService: NgxMathMdService) { }
 
@@ -39,7 +38,7 @@ export class NgxMathMdComponent implements OnInit {
         error => console.log(error),
       );
   }
-  
+
   /** Compile markdown into HTML and render found LaTex expressions and code blocks.
     */
   renderMD(markdown: string) {

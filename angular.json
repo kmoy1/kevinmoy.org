@@ -53,7 +53,7 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
+                  "maximumWarning": "3mb",
                   "maximumError": "1mb"
                 },
                 {
@@ -145,6 +145,37 @@
             "main": "projects/ngx-math-md/src/test.ts",
             "tsConfig": "projects/ngx-math-md/tsconfig.spec.json",
             "karmaConfig": "projects/ngx-math-md/karma.conf.js"
+          }
+        }
+      }
+    },
+    "ngx-ipynb": {
+      "projectType": "library",
+      "root": "projects/ngx-ipynb",
+      "sourceRoot": "projects/ngx-ipynb/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-ipynb/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-ipynb/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-ipynb/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-ipynb/src/test.ts",
+            "tsConfig": "projects/ngx-ipynb/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-ipynb/karma.conf.js"
           }
         }
       }
