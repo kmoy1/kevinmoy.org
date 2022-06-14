@@ -2,6 +2,7 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
+    "analytics": "afedfb25-e0b6-475c-8abb-ef7133f162ee",
     "cache": {
       "enabled": true
     }
@@ -45,7 +46,8 @@
               "node_modules/prismjs/components/prism-python.min.js",
               "node_modules/prismjs/components/prism-java.min.js",
               "node_modules/prismjs/components/prism-javascript.min.js",
-              "node_modules/katex/dist/katex.js"
+              "node_modules/katex/dist/katex.js",
+              "src/js/mjconfig.js"
             ]
           },
           "configurations": {
