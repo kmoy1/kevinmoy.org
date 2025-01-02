@@ -20,6 +20,9 @@ import { ArticleMdDisplayComponent } from './markdown/article-md-display/article
 import { NgxMathMdModule } from 'projects/ngx-math-md/src/public-api';
 import { NgxIpynbModule } from 'projects/ngx-ipynb/src/public-api';
 import { TestComponent } from './test/test.component';
+import { LoadingComponent } from './loading/loading.component';
+import { LoadingService } from './loading/loading.service';
+
 
 @NgModule({
   declarations: [
@@ -34,6 +37,7 @@ import { TestComponent } from './test/test.component';
     ProblemMdDisplayComponent,
     ArticleMdDisplayComponent,
     TestComponent,
+    LoadingComponent
   ],
   imports: [
     CommonModule,
@@ -49,7 +53,7 @@ import { TestComponent } from './test/test.component';
       sanitize: SecurityContext.NONE
     })
   ],
-  providers: [],
+  providers: [LoadingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
