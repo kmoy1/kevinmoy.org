@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-top-navbar',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
 export class TopNavbarComponent {
 
   constructor() { }
-  
+
 }
