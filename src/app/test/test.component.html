@@ -1,18 +1,20 @@
 <div class="container">
-  <div>
-    <h1>Test API Call</h1>
-    <input [(ngModel)]="inputData" placeholder="Enter some text" />
-    <button (click)="onSubmit()">Submit</button>
+	  <!-- <div>
+        <h1>Test API Call</h1>
+        <input [(ngModel)]="inputData" placeholder="Enter some text" />
+        <button (click)="onSubmit()">Submit</button>
 
-    <div *ngIf="responseData">
-      <h3>API Response</h3>
-      <pre>{{ responseData | json }}</pre>
-    </div>
+        <div *ngIf="responseData">
+        <h3>API Response</h3>
+        <pre>{{ responseData | json }}</pre>
+        </div>
 
-    <div *ngIf="errorMessage">
-      <p style="color: red;">{{ errorMessage }}</p>
-    </div>
-  </div>
+        <div *ngIf="errorMessage">
+            <p style="color: red;">{{ errorMessage }}</p>
+        </div>
+  	</div> -->
+    <iframe
+    src="https://kevinmoy-verybasic-app.streamlit.app?embed=true"></iframe>
     <!-- <ngx-math-md [src]=mdPath></ngx-math-md> -->
     <!-- <ngx-ipynb [src]=htmlPath></ngx-ipynb> -->
 </div>

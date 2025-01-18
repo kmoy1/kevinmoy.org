@@ -1,9 +1,14 @@
 .container {
-    max-width: 50%
+    display: flex;
+    height: 87vh;
+}
+
+.container iframe {
+  width: 100%
 }
 
 @media (max-width: 700px) {
     .container {
         max-width: 100%
-    }    
+    }
 }
