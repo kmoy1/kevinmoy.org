@@ -8,10 +8,12 @@ import { AboutComponent } from './base/about/about.component';
 import { ProblemMdDisplayComponent } from './markdown/problem-md-display/problem-md-display.component';
 import { ArticleMdDisplayComponent } from './markdown/article-md-display/article-md-display.component';
 import { TestComponent } from './test/test.component';
+import { ProjectDemoComponent } from './project-demo/project-demo.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
   { path: 'projects', component: ProjectsComponent },
+  { path: 'projects/:project_id', component: ProjectDemoComponent },
   { path: 'problems', component: ProblemsComponent },
   { path: 'problems/:id', component: ProblemMdDisplayComponent},
   { path: 'articles/:id', component: ArticleMdDisplayComponent},
@@ -22,7 +24,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes), 
+    RouterModule.forRoot(routes),
   ],
   exports: [RouterModule]
 })

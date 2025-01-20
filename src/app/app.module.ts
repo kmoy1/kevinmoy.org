@@ -22,6 +22,7 @@ import { NgxIpynbModule } from 'projects/ngx-ipynb/src/public-api';
 import { TestComponent } from './test/test.component';
 import { LoadingComponent } from './loading/loading.component';
 import { LoadingService } from './loading/loading.service';
+import { ProjectDemoComponent } from './project-demo/project-demo.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { LoadingService } from './loading/loading.service';
     ProblemMdDisplayComponent,
     ArticleMdDisplayComponent,
     TestComponent,
-    LoadingComponent
+    LoadingComponent,
+    ProjectDemoComponent
   ],
   imports: [
     CommonModule,
